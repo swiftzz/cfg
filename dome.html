@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dome</title>
+    <style>
+        html,body,
+        video {
+            margin: 0;
+            padding: 0;
+        }
+        video {
+            width: 100%;
+            height: 720px;
+        }
+        .controls {
+            width: 96%;
+            height: 30px;
+            background-color: blueviolet;
+            border-radius: 5px;
+            margin: -7px auto;
+        }
+        .play {
+            width: 0;
+            height: 0;
+            border-top: 12px solid rgba(0,0,0,0);
+            border-bottom: 12px solid rgba(0,0,0,0);
+            border-left: 15px solid #fff;
+            float: left;
+            margin-left: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .play-off {
+            width: 6px;
+            float: left;
+            height:20px;
+            border-left: 5px solid #fff;
+            border-right: 5px solid #fff;
+            margin-left: 20px;
+            margin-top: 5px;
+
+        }
+        .progress {
+            width: 80%;
+            height: 4px;
+            float: left;
+            background-color: #000;
+            margin-top: 15px;
+            margin-left: 10px;
+            border-radius: 4px;
+            position: relative;
+        }
+        .btnCtrl {
+            position: absolute;
+            height: 6px;
+            width: 14px;
+            background-color: #fff;
+            border-radius: 4px;
+            top: -1px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <video src="img/T1T78eXapfXXXXXXXX.mp4"></video>
+    <div class="controls">
+        <div class="play" id="play"></div>
+        <div class="progress">
+            <div class="btnCtrl"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
